@@ -1,0 +1,71 @@
+body {
+  font-family: "JetBrains Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+#info {
+  position: absolute;
+  top: 10px;
+  color:aqua;
+  opacity: 0.6;
+  width: 100%;
+  z-index: 100;
+  display: block;
+}
+
+.sliders{
+  display: block;
+  justify-content: flex-end;
+}
+
+.control {
+  margin: 0 0 0 auto;
+  width: 30%;
+  text-align: right;
+}
+.btn-outline {
+  background: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-outline2 {
+  background: transparent;
+  color: #00ff7b;
+  border: 2px solid #00ff7b;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #007bff;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.btn-outline:active {
+  transform: translateY(2px);
+}
+.btn-outline2:hover {
+  background: #00ff7b;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.btn-outline2:active {
+  transform: translateY(2px);
+}
+.btn-outline:disabled {
+  color: #bbbbbb;
+  border: 2px solid #bbbbbb;
+  transform: translateY(2px);
+}
