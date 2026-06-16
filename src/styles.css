@@ -6,16 +6,15 @@ body {
 #info {
   position: absolute;
   top: 10px;
-  color:aqua;
+  color: salmon;
   opacity: 0.6;
   width: 100%;
   z-index: 100;
   display: block;
 }
 
-.sliders{
-  display: block;
-  justify-content: flex-end;
+#sliders{
+  padding-left: 20px;
 }
 
 .control {
