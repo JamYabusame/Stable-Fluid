@@ -29,7 +29,7 @@ const ctx = visCanvas.getContext('2d');
 const imageData = ctx.createImageData(VIS_W, VIS_H);
 const texture = new THREE.CanvasTexture(visCanvas);
 
-// 画面全体を覆う1枚のクワッドで描画（160x160の個別メッシュ不要）
+// 画面全体を覆う1枚のクワッドで描画
 const quadMat = new THREE.MeshBasicMaterial({ map: texture });
 const quad = new THREE.Mesh(new THREE.PlaneGeometry(2 * aspect, 2), quadMat);
 scene.add(quad);
@@ -144,7 +144,7 @@ function advect() {
   setBnd(2, u, 'y');
 }
 
-// 4倍バイリニアアップサンプリングでキャンバスに書き込む（x速度→赤、y速度→緑）
+// 4倍バイリニアアップサンプリングでキャンバスに書き込む
 function updateGrid() {
   const data = imageData.data;
   for (let py = 0; py < VIS_H; py++) {
